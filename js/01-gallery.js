@@ -47,10 +47,15 @@ galleryElements.addEventListener('click', event => {
                     modal.close();
                 }
             });
- 
-            document.addEventListener('keydown', escapeListener);
-        
+ function escapeListener(event) {
+    if (event.key === 'Escape') {
+        modal.close();
+    }
+}
+            document.addEventListener('keydown', escapeListener);      
     
 });
+
+
 
 
