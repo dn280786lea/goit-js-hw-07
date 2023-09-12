@@ -45,6 +45,7 @@ galleryElements.addEventListener('click', event => {
            modal.element().addEventListener('click', event => {
                 if (event.target.nodeName === 'IMG') {
                     modal.close();
+                    
                 }
             });
  function escapeListener(event) {
